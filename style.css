@@ -1,0 +1,127 @@
+:root {
+  --body-bg-color: hsl(240, 5%, 7%);
+  --text-color: rgb(224, 224, 229);
+  --title-color: hsl(147, 96%, 42%);
+  --form-color: hsl(0, 0%, 66%);
+  --bg-button-color: hsl(258, 73%, 62%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Spartan', 'Work Sans', sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 720px 1fr;
+}
+
+main{
+  height: 100vh;
+  background-color: var(--body-bg-color);
+}
+
+.container{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo{
+  width: 389px;
+  height: 94px;
+  margin: 50px 301px 0 30px ;
+}
+
+.info{
+  color: var(--text-color);
+  margin: 92px 236px 0 36px;
+  width: 647px;
+  height: 102px;
+  margin-bottom: 50px;
+}
+
+.info h2{
+  font-family: 'Work Sans', sans-serif;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8.6px;
+}
+
+.info h3{
+  font-family: 'Spartan', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 9px;  
+}
+
+aside{
+  background-image: url(assets/read_news.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+form{
+  margin-left: 36px;
+  position: relative;
+}
+
+form legend{
+  color: var(--form-color);
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+fieldset{
+  border: none;
+}
+
+.email{
+  display: flex;
+  width: 798px;
+  margin-top: 17px;
+}
+
+.email input{
+  width: 798px;
+  height: 48px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  color: var(--form-color);
+  border-left: solid 10px var(--title-color);
+  padding: 15px;
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.email button{
+  width: 48px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+}
+
+.reader{
+  margin:50px 0 0 36px;
+  width: 196px;
+}
+
+.reader a{
+  font-family: 'Spartan', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--bg-button-color);
+  display: flex;
+  align-items: center;
+}
